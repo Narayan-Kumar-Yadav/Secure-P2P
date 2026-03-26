@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07070b;
+  --foreground: #f8fafc;
+  --primary: #8b5cf6;
+  --primary-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.12);
+  --font-sans-stack: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-mono-stack: "Consolas", "Courier New", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-sans-stack);
+  --font-mono: var(--font-mono-stack);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--foreground);
+  font-family: var(--font-sans-stack);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.16) 0%, transparent 42%),
+    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.18) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(14, 14, 22, 0.98) 0%, rgba(7, 7, 11, 1) 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.glass-input:focus {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.12);
+  outline: none;
+}

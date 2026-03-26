@@ -1,0 +1,16 @@
+node_modules/
+backend/node_modules/
+
+backend-dev.stdout.log
+backend-dev.stderr.log
+frontend-dev.stdout.log
+frontend-dev.stderr.log
+chrome-dom.txt
+chrome-e2e-profile/
+chrome-e2e-profile-*/
+
+.env
+.env.local
+.env.*.local
+
+.DS_Store
