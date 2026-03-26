@@ -16,6 +16,8 @@
 Secure P2P is a decentralized file sharing and collaboration application that creates private peer rooms in the browser. Users can generate a room, invite another peer with a code or QR link, chat over an encrypted WebRTC data channel, and transfer very large files without uploading them to a storage server.
 
 The backend is used only for signaling. Actual file and chat data move directly between peers after the WebRTC session is established.
+ <img width="891" height="429" alt="image" src="https://github.com/user-attachments/assets/8bba8e65-0c92-448d-8c47-efb96c7d45e6" />
+
 
 ## Why This Project Stands Out
 
